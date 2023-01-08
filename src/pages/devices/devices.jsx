@@ -1,15 +1,14 @@
 import React from 'react'
-import MainObject from "../../components/main-object/main-object";
+import NavTitle from "../../components/nav-title";
 
-const Devices = () => {
+const Devices = ({devices}) => {
+
 
   return (
     <div>
-      <MainObject to='/devices/voopoo' title='Voopoo'/>
-      <MainObject to='/devices/vaporesso' title='Vaporesso'/>
-      <MainObject to='/devices/smoant' title='Smoant'/>
-      <MainObject to='/devices/joyetech' title='Joyetech'/>
-      <MainObject to='/devices/geekvape' title='GeekVape'/>
+        {devices.map(({name, slug, id}) => <div key={id} >
+           <NavTitle title={name} slug={slug}/>
+        </div>)}
     </div>
   )
 }

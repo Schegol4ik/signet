@@ -8,10 +8,12 @@ import OneShots from './pages/one-shots/one-shots'
 import Liquids from './pages/liquids/liquids'
 import Header from './components/header/header'
 import ErrorPage from './components/error-page'
-import "./style.scss";
+import "./App.scss";
 import {useSelector} from "react-redux";
 import DeviceProduct from "./pages/devices/device-product/device-product";
 import AboutDevice from "./pages/devices/device-product/about-device/about-device";
+import LiquidsRulers from "./pages/liquids/liquids-rulers/liquids-rulers";
+import AboutLiquids from "./pages/liquids/about-liquids/about-liquids";
 
 export default function App() {
 
@@ -21,18 +23,20 @@ export default function App() {
 
     return (
         <div className='wrapper__app'>
-            <Header/>
+            <Header devices={devices} liquids={liquids}/>
             <Routes>
                 <Route path='/' element={<Main/>}/>
                 <Route path='/*' element={<ErrorPage/>}/>
-                <Route path='/devices' element={<Devices devices={devices}/>}/>
-                <Route path='/devices/:product' element={<DeviceProduct devices={devices}/>} />
-                <Route path='/devices/:product/:item' element={<AboutDevice devices={devices}/>} />
-                <Route path='/liquids' element={<Liquids liquids={liquids}/>}/>
+                <Route path='/devices' element={<Devices devices={devices.producers}/>}/>
+                <Route path='/devices/:product' element={<DeviceProduct devices={devices.devices}/>} />
+                <Route path='/devices/:product/:item' element={<AboutDevice devices={devices.devices}/>} />
+                <Route path='/liquids' element={<Liquids liquids={liquids.producer}/>}/>
+                <Route path='/liquids/:product' element={<LiquidsRulers liquids={liquids.rulers}/>}/>
+                <Route path='/liquids/:product/:item' element={<AboutLiquids liquids={liquids.liquids}/>}/>
                 <Route path='/others' element={<Others/>}/>
                 <Route path='/one_shots' element={<OneShots/>}/>
             </Routes>
-            <Footer/>
+            {/*<Footer/>*/}
         </div>
     );
 }

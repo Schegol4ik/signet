@@ -6,7 +6,7 @@ const DeviceProduct = ({devices}) => {
     const param = useParams()
 
     const filterDevices = useMemo(() => {
-        return devices.devices.filter(item => item.producer.toLowerCase() === param.product)
+        return devices.filter(item => item.producer.toLowerCase() === param.product.toLowerCase())
     }, [param.product])
 
 

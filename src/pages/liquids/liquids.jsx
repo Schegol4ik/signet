@@ -1,9 +1,13 @@
 import React from 'react'
+import NavTitle from "../../components/nav-title";
 
-const Liquids = () => {
+const Liquids = ({liquids}) => {
+
   return (
     <div>
-      Liquids
+        {liquids.map(({id, slug, title}) => <div key={id}>
+            <NavTitle slug={slug} title={title}/>
+        </div>)}
     </div>
   )
 }

@@ -1,20 +1,31 @@
-.object--wrapper{
+.object--wrapper {
+  min-width: 400px;
+  min-height: 400px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px red;
 
-    width: 400px;
-    height: 400px;
-    background-color: black;
-    margin: 10px;
-    border-radius: 5px;
+  &:hover{
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ff0000, 0 0 40px #ff0000;
+  }
+  @media screen and (max-width: 900px) {
+    min-width: 200px;
+    min-height: 200px;
+  }
+  @media screen and (max-width: 450px) {
+    min-width: 50px;
+    min-height: 50px;
+  }
 
-  a{
+  a {
     color: white;
     text-decoration: none;
     width: 400px;
-    height: 400px; 
+    height: 400px;
   }
 
-  h3{
-    margin: 10px;
+  h3 {
+    padding: 20px;
   }
-        
+
 }

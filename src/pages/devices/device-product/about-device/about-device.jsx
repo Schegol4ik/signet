@@ -6,10 +6,9 @@ const AboutDevice = ({devices}) => {
     const param = useParams()
 
     const filterDevices = useMemo(() => {
-        return devices.devices.filter(item => item.slug.toLowerCase() === param.item)
+        return devices.filter(item => item.slug.toLowerCase() === param.item.toLowerCase())
     }, [param.item])
 
-    console.log(filterDevices)
 
     return (
         <div>

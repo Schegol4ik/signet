@@ -1,15 +1,15 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import './main-object.scss'
 
 const MainObject = ({to, title}) => {
-  return (
-    <div className='object--wrapper'>
-        <NavLink to={to} >
-          <h3>{title}</h3>
+    return (
+        <NavLink to={to}>
+            <div className='object--wrapper'>
+                <h3>{title}</h3>
+            </div>
         </NavLink>
-        </div>
-  )
+    )
 }
 
 export default MainObject
