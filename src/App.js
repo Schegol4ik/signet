@@ -25,16 +25,16 @@ export default function App() {
         <div className='wrapper__app'>
             <Header devices={devices} liquids={liquids}/>
             <Routes>
-                <Route path='/' element={<Main/>}/>
+                <Route path='/signet' element={<Main/>}/>
                 <Route path='/*' element={<ErrorPage/>}/>
-                <Route path='/devices' element={<Devices devices={devices.producers}/>}/>
-                <Route path='/devices/:product' element={<DeviceProduct devices={devices.devices}/>} />
-                <Route path='/devices/:product/:item' element={<AboutDevice devices={devices.devices}/>} />
-                <Route path='/liquids' element={<Liquids liquids={liquids.producer}/>}/>
-                <Route path='/liquids/:product' element={<LiquidsRulers liquids={liquids.rulers}/>}/>
-                <Route path='/liquids/:product/:item' element={<AboutLiquids liquids={liquids.liquids} liquidsRuler={liquids.rulers}/>}/>
-                <Route path='/others' element={<Others/>}/>
-                <Route path='/one_shots' element={<OneShots/>}/>
+                <Route path='/signet/devices' element={<Devices devices={devices.producers}/>}/>
+                <Route path='/signet/devices/:product' element={<DeviceProduct devices={devices.devices}/>} />
+                <Route path='/signet/devices/:product/:item' element={<AboutDevice devices={devices.devices}/>} />
+                <Route path='/signet/liquids' element={<Liquids liquids={liquids.producer}/>}/>
+                <Route path='/signet/liquids/:product' element={<LiquidsRulers liquids={liquids.rulers}/>}/>
+                <Route path='/signet/liquids/:product/:item' element={<AboutLiquids liquids={liquids.liquids} liquidsRuler={liquids.rulers}/>}/>
+                <Route path='/signet/others' element={<Others/>}/>
+                <Route path='/signet/one_shots' element={<OneShots/>}/>
             </Routes>
             {/*<Footer/>*/}
         </div>

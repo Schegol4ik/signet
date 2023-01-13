@@ -15,7 +15,7 @@ const AboutDevice = ({devices}) => {
         <div className='wrapper--about-devices'>
             {filterDevices
                 ? filterDevices.map((item) => <div key={item.id} className='about-devices__options'>
-                    <Back to={`/devices/${item.producer.toLowerCase()}`}/>
+                    <Back to={`/signet/devices/${item.producer.toLowerCase()}`}/>
                     <h1>{item.producer} {item.name}</h1>
                     <div className="options__param">
                         <h3>Материал корпуса</h3>
@@ -61,10 +61,6 @@ const AboutDevice = ({devices}) => {
                             : <div></div>
                         }
 
-                    </div>
-                    <div className="options__param">
-                        <h3></h3>
-                        <p></p>
                     </div>
                 </div>)
                 : <div>Netu</div>

@@ -18,7 +18,7 @@ const Search = ({value, devices, liquids}) => {
                     ? <div>
                         <p>-- Устройства --</p>
                         {findDevices.map(item => <div key={item.id} className='search__find'><NavLink
-                            to={`/devices/${item.producer.toLowerCase()}/${item.slug.toLowerCase()}`}>
+                            to={`/signet/devices/${item.producer.toLowerCase()}/${item.slug.toLowerCase()}`}>
                             <p>{item.producer} {item.name}</p></NavLink></div>)}
                     </div>
                     : <div></div>
@@ -46,7 +46,7 @@ const Search = ({value, devices, liquids}) => {
                     ? <div>
                         <p>-- Линейка --</p>
                         {findRulers.map(item => <div key={item.id} className='search__find'><NavLink
-                            to={`/liquids/${item.slug_producer}/${item.slug}`}><p>{item.producer} {item.name}</p></NavLink>
+                            to={`/signet/liquids/${item.slug_producer}/${item.slug}`}><p>{item.producer} {item.name}</p></NavLink>
                         </div>)}
                     </div>
                     : <div></div>

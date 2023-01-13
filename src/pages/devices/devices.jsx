@@ -8,7 +8,7 @@ const Devices = ({devices}) => {
 
   return (
     <div className='wrapper--devices'>
-            <Back to='/'/>
+            <Back to='/signet'/>
             <h1>Производители</h1>
         {devices.map(({name, slug, id}) => <div key={id} >
            <NavTitle title={name} slug={slug}/>

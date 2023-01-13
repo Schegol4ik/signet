@@ -15,7 +15,7 @@ const LiquidsRulers = ({liquids}) => {
 
     return (
         <div className='wrapper--liquids-rulers'>
-            <Back to='/liquids'/>
+            <Back to='/signet/liquids'/>
             <div className='rulers__title'>
                 <div>
                     <h3>Линейка</h3>

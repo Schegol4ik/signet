@@ -7,7 +7,7 @@ const Liquids = ({liquids}) => {
 
     return (
         <div className='wrapper--liquids'>
-            <Back to='/'/>
+            <Back to='/signet'/>
             <h1>Производители</h1>
             {liquids.map(({id, slug, title}) => <div key={id} className='liquids__producers'>
                 <NavTitle slug={slug} title={title}/>

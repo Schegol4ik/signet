@@ -16,7 +16,7 @@ const Header = ({devices, liquids}) => {
 
   return (
     <div className='wrapper--header'>
-      <NavLink to='/'><Logo/></NavLink>
+      <NavLink to='/signet'><Logo/></NavLink>
         <div className='header__search'>
                 <input
                     type="text"

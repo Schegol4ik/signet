@@ -9,7 +9,7 @@ const AboutRuler = ({findRulers}) => {
         <div>
             {findRulers.map(({nicotine, nicotine_type, vg_pg, volume, id, name, producer,slug_producer}) => <div
                 className='wrapper--about-ruler' key={id}>
-                <Back to={`/liquids/${slug_producer}`}/>
+                <Back to={`/signet/liquids/${slug_producer}`}/>
                 <h1>{producer} - {name}</h1>
                 <div className='about-ruler--options'>
                     <div className='options__current'>

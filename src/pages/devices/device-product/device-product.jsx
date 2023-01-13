@@ -14,11 +14,11 @@ const DeviceProduct = ({devices}) => {
 
     return (
         <div className='wrapper--devices__product'>
-            <Back to='/devices'/>
+            <Back to='/signet/devices'/>
             <h1>Модели</h1>
             {filterDevices
                 ? filterDevices.map(item => <div key={item.id}>
-                    <NavLink to={`/devices/${item.producer.toLowerCase()}/${item.slug}`}><h4>{`${item.producer} ${item.name}`}</h4></NavLink>
+                    <NavLink to={`/signet/devices/${item.producer.toLowerCase()}/${item.slug}`}><h4>{`${item.producer} ${item.name}`}</h4></NavLink>
                 </div>)
                 : <div/>}
         </div>
