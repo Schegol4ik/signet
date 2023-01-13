@@ -23,7 +23,7 @@ const AboutLiquids = ({liquids, liquidsRuler}) => {
                     {findLiquids.map(({id, ruler, name, title, cooler, double_cooler}) => <div key={id}>
                         <div className='about-liquids__title'>
                             <h4>{ruler} {name} - </h4>
-                            <h4 style={cooler || double_cooler ? {color: '#4574ed'} : {}}>{title}</h4>
+                            <h4 style={cooler || double_cooler ? {color: '#11f5e6'} : {}}>{title}</h4>
                             <h3 style={double_cooler ? {} : {display: 'none'}}>ICE X 2</h3>
                         </div>
                     </div>)}
