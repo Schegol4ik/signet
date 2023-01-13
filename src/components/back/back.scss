@@ -1,0 +1,13 @@
+
+.wrapper--back{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    .icon{
+        font-size: 30px;
+        &:hover{
+            color: red;
+        }
+    }
+}
+

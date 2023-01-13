@@ -1,0 +1,31 @@
+.wrapper--about-devices {
+  margin: 50px;
+  h1 {
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 1px 1px red, 2px 2px red;
+    &:hover{
+      color: red;
+    }
+  }
+  .about-devices__options {
+    margin: 30px;
+
+    .options__param {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-left: 30px;
+        font-size: 18px;
+
+      }
+      h3{
+        cursor: pointer;
+        &:hover {
+          color:red;
+        }
+      }
+    }
+  }
+}

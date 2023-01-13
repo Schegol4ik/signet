@@ -1,0 +1,23 @@
+.wrapper--liquids-rulers {
+  margin: 50px;
+ .rulers__title{
+   display: flex;
+   justify-content: space-around;
+   h3 {
+     margin-left: 10px;
+   }
+ }
+  .rulers__about {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .title__nav{
+    h4 {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+}

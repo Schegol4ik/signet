@@ -1,0 +1,19 @@
+.wrapper--about-liquids {
+  margin: 50px;
+  .about-liquids__title{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: red;
+    }
+    h3 {
+      margin: 2px;
+      color: #c0d1fc;
+    }
+    h4 {
+      margin: 3px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,5 +1,21 @@
 .wrapper--search {
   position: absolute;
-  top: 50px;
+  top: 70px;
   text-align: left;
+  min-width: 300px;
+  background-color: black;
+
+  .search__find {
+    margin: 2px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    p{
+      margin: 2px;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+  }
 }

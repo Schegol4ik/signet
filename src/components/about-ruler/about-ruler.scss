@@ -1,0 +1,23 @@
+.wrapper--about-ruler {
+  margin: 20px;
+
+
+  .about-ruler--options {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+    .options__current{
+      padding: 5px;
+    }
+  }
+  h1 {
+    max-width: 800px;
+    cursor: pointer;
+    text-shadow: 1px 1px red, 2px 2px red;
+    &:hover {
+      color: #f51b34;
+    }
+  }
+}

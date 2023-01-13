@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 const NavTitle = ({title, slug}) => {
     return (
         <NavLink to={slug}>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
         </NavLink>
     );
 };

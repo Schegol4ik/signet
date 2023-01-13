@@ -1,0 +1,13 @@
+.wrapper--devices__product{
+    margin: 50px;
+h1 {
+    text-align: center;
+}
+    h4{
+        font-size: 18px;
+        margin: 20px;
+        &:hover{
+            color: red;
+        }
+    }
+}
