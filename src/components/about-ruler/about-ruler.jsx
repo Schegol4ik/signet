@@ -4,7 +4,6 @@ import Back from "../back/back";
 
 const AboutRuler = ({findRulers}) => {
 
-    console.log(findRulers)
     return (
         <div>
             {findRulers.map(({nicotine, nicotine_type, vg_pg, volume, id, name, producer,slug_producer}) => <div
