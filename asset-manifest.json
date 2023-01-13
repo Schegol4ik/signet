@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Schegol4ik/signet/static/css/main.3c8d1f4b.css",
-    "main.js": "/Schegol4ik/signet/static/js/main.1cafbb66.js",
-    "index.html": "/Schegol4ik/signet/index.html",
-    "main.3c8d1f4b.css.map": "/Schegol4ik/signet/static/css/main.3c8d1f4b.css.map",
-    "main.1cafbb66.js.map": "/Schegol4ik/signet/static/js/main.1cafbb66.js.map"
+    "main.css": "/signet/static/css/main.3c8d1f4b.css",
+    "main.js": "/signet/static/js/main.8343ebe3.js",
+    "index.html": "/signet/index.html",
+    "main.3c8d1f4b.css.map": "/signet/static/css/main.3c8d1f4b.css.map",
+    "main.8343ebe3.js.map": "/signet/static/js/main.8343ebe3.js.map"
   },
   "entrypoints": [
     "static/css/main.3c8d1f4b.css",
-    "static/js/main.1cafbb66.js"
+    "static/js/main.8343ebe3.js"
   ]
 }
