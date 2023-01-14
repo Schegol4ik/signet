@@ -29,7 +29,7 @@ const LiquidsRulers = ({liquids}) => {
                 </div>
                 <RulerTitle array={findRulerLiquids} title='Никотин' name='nicotine'/>
                 <RulerTitle array={findRulerLiquids} title='Тип' name='nicotine_type'/>
-                <RulerTitle array={findRulerLiquids} title='VG/Pg' name='vg_pg'/>
+                <RulerTitle array={findRulerLiquids} title='VG/PG' name='vg_pg'/>
                 <RulerTitle array={findRulerLiquids} title='Объем' name='volume'/>
             </div>
 

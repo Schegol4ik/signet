@@ -1,32 +1,35 @@
-
-
-let initialState  = {
+let initialState = {
     producers: [
         {
             id: 1,
             name: 'Vaporesso',
             slug: 'vaporesso',
+            url_image: ''
         },
         {
             id: 2,
             name: 'Voopoo',
             slug: 'voopoo',
+            url_image: ''
         },
         {
             id: 3,
             name: 'Smoant',
             slug: 'smoant',
+            url_image: ''
         },
 
         {
             id: 4,
             name: 'GeekVape',
             slug: 'geekvape',
+            url_image: ''
         },
         {
             id: 5,
             name: 'Joyetech',
             slug: 'joyetech',
+            url_image: ''
         },
     ],
     devices: [
@@ -35,7 +38,7 @@ let initialState  = {
             slug: 'v-thru',
             producer: 'Voopoo',
             name: 'V.Thru Pro',
-            material_box: 'Аллюминий',
+            material_box: 'Алюминий',
             material_cartridge: 'PCTG',
             accum: '900',
             charget: 'Type-C / 1 A',
@@ -54,7 +57,7 @@ let initialState  = {
             slug: 'barr',
             producer: 'Vaporesso',
             name: 'Barr',
-            material_box: 'Аллюминий',
+            material_box: 'Алюминий',
             material_cartridge: 'PCTG',
             accum: '350',
             charget: 'Type-C / 0.5 A',
@@ -92,7 +95,7 @@ let initialState  = {
             slug: 'xros-mini',
             producer: 'Vaporesso',
             name: 'Xros Mini',
-            material_box: 'Аллюминий',
+            material_box: 'Алюминий',
             material_cartridge: 'PCTG',
             accum: '1000',
             charget: 'Type-C / 1 A',
@@ -111,7 +114,7 @@ let initialState  = {
             slug: 'xros2',
             producer: 'Vaporesso',
             name: 'Xros 2',
-            material_box: 'Аллюминий',
+            material_box: 'Алюминий',
             material_cartridge: 'PCTG',
             accum: '1000',
             charget: 'Type-C / 1 A',
@@ -130,7 +133,7 @@ let initialState  = {
             slug: 'baby',
             producer: 'Smoant',
             name: 'Charon Baby',
-            material_box: 'Аллюминий',
+            material_box: 'Алюминий',
             material_cartridge: 'PCTG',
             accum: '750',
             charget: 'Type-C / 0.8 A',
@@ -217,7 +220,7 @@ let initialState  = {
             blowing: 'Поворотом картриджа',
             new: false,
             functions:
-                'Passthrough, автозатяжка, режимы мощности(Low, Medium, Hight)',
+                'Passthrough, автозатяжка, режимы мощности(Low, Medium, High)',
             title: '',
             eqpiment:
                 'Батарейный блок, 2 испарителя 0.8 и 1.2 Ом, руководство, кабель Type-C',
@@ -227,7 +230,7 @@ let initialState  = {
             slug: 'vinci',
             producer: 'Voopoo',
             name: 'Vinci / Vinci Royal Edition',
-            material_box: 'Аллюминий',
+            material_box: 'Алюминий',
             material_cartridge: 'PCTG',
             accum: '800',
             charget: 'Type-C / 1 A',
@@ -238,7 +241,7 @@ let initialState  = {
             new: false,
             functions: 'Gene chip, автозатяжка, в Royal версии красивые вставки',
             title: '',
-            eqpiment: 'Батарейный блок, картридж 0.8 Ом, руководство, кабель Type-C',
+            eqpiment: 'Батарейный блок, картридж 0.8 Ом (В Royal Edition доп. 1.2 Ом), руководство, кабель Type-C',
         },
         {
             id: 12,
@@ -322,11 +325,11 @@ let initialState  = {
             slug: 'vmate-infinity',
             producer: 'Voopoo',
             name: 'Vmate Infiniti Edition',
-            material_box: 'Аллюминий',
+            material_box: 'Алюминий',
             material_cartridge: 'PCTG',
             accum: '900',
             charget: 'Type-C / 1 A',
-            power: '5 - 25',
+            power: '17',
             cartrige_ml: '3',
             min_resistance: null,
             blowing: 'Отсутствует',
@@ -379,7 +382,7 @@ let initialState  = {
             slug: 'xros-nano',
             producer: 'Vaporesso',
             name: 'Xros Nano',
-            material_box: 'Аллюминий',
+            material_box: 'Алюминий',
             material_cartridge: 'PCTG',
             accum: '1000',
             charget: 'Type-C / 1 A',
@@ -444,7 +447,7 @@ let initialState  = {
             min_resistance: null,
             blowing: 'Отсутствует',
             new: false,
-            functions: 'Passthrough, автозатяжка',
+            functions: 'Passthrough, автозатяжка, заряд батареи можно посмотреть при установке картриджа',
             title: '',
             eqpiment:
                 'Батарейный блок, картридж 1.0 и 1.3 Ом, пустой флакон на 10 мл, руководство, кабель Type-C ',
@@ -464,7 +467,7 @@ let initialState  = {
             blowing: 'Верхний',
             new: false,
             functions:
-                'Passthrough, возможность установки RBA, Bypass, Buck Boost (Максимальная производительности при низком аккумуляторе)',
+                'Passthrough, возможность установки RBA, Bypass, Buck Boost (Максимальная производительность при низком аккумуляторе)',
             title: '',
             eqpiment:
                 'Батарейный блок, испаритель 0.4 и 0.6 Ом, запасной 510 дрип-тип, ключ для извлечения испарителя, руководство, кабель Type-C ',

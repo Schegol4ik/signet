@@ -3,7 +3,7 @@
   h1 {
     text-align: center;
     cursor: pointer;
-    text-shadow: 1px 1px red, 2px 2px red;
+    text-shadow: 1px 1px gray, 2px 2px black;
     &:hover{
       color: red;
     }
@@ -17,14 +17,11 @@
 
       p {
         margin-left: 30px;
-        font-size: 18px;
+        font-size: 20px;
 
       }
       h3{
         cursor: pointer;
-        &:hover {
-          color:red;
-        }
       }
     }
   }

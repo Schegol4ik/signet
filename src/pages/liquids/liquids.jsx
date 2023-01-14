@@ -2,6 +2,7 @@ import React from 'react'
 import NavTitle from "../../components/nav-title";
 import './liquids.scss'
 import Back from "../../components/back/back";
+import ProducerObject from "../../components/producer-object/producer-object";
 
 const Liquids = ({liquids}) => {
 
@@ -10,7 +11,7 @@ const Liquids = ({liquids}) => {
             <Back to='/signet'/>
             <h1>Производители</h1>
             {liquids.map(({id, slug, title}) => <div key={id} className='liquids__producers'>
-                <NavTitle slug={slug} title={title}/>
+                <ProducerObject to={slug} title={title}/>
             </div>)}
         </div>
     )

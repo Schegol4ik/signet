@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react'
-import {NavLink, useParams} from 'react-router-dom'
+import {NavLink, useLocation} from 'react-router-dom'
 import Search from "../search/search";
 import Logo from "../logo/logo";
-import { AiOutlineEnter } from "react-icons/ai";
-import {useLocation} from 'react-router-dom'
 import './header.scss'
 
 
@@ -23,7 +21,7 @@ const Header = ({devices, liquids}) => {
                     value={value}
                     onChange={ (e) => setValue(e.target.value)}
                 />
-                <AiOutlineEnter className='search__logo'/>
+
             {value.length !== 0
                 ? <Search value={value} liquids={liquids} devices={devices}/>
                 : <></>

@@ -6,10 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
-  background-image: url("https://img.freepik.com/free-photo/abstract-smoke-wallpaper-background-for-desktop_53876-133383.jpg?size=626&ext=jpg&ga=GA1.1.250031196.1673637434");
-  background-size: 100% 100%;
-  min-height: 800px;
+  background-image: url("https://images.wallpaperscraft.ru/image/single/dym_pelena_temnyj_fon_118867_3840x2400.jpg");
+  background-size: 100vw 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 code {

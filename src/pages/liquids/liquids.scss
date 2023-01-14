@@ -1,17 +1,11 @@
 .wrapper--liquids {
   margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   h1 {
     text-align: center;
   }
 
-  .liquids__producers {
-    margin: 50px;
-    max-width: 150px;
-    h4 {
-      &:hover {
-        color: red;
-      }
-    }
-
-  }
 }
