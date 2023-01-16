@@ -1,17 +1,36 @@
 .wrapper--search {
   position: absolute;
-  top: 70px;
+  top: 35px;
   text-align: left;
   min-width: 300px;
+  width: 87.5%;
   background-color: black;
+  max-height: 90vh;
+  overflow-y: scroll;
+  border-bottom: 1px solid red;
+  opacity: .9;
+  padding: 20px;
+  &::-webkit-scrollbar {
+    background-color: black;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: red;
+    border: 1px solid black;
+  }
+  h2{
+    text-align: center;
+  }
 
   .search__find {
     margin: 2px 0 0 0;
     display: flex;
     flex-wrap: wrap;
+    max-height: 90vh;
+
+
     p{
-      margin: 2px;
-      font-size: 16px;
+      margin: 3px;
+      font-size: 20px;
       cursor: pointer;
       &:hover {
         color: red;

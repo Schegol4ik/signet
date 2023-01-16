@@ -16,7 +16,7 @@ const Search = ({value, devices, liquids}) => {
             <div>
                 {findDevices.length
                     ? <div>
-                        <p>-- Устройства --</p>
+                        <h2>-- Устройства --</h2>
                         {findDevices.map(item => <div key={item.id} className='search__find'><NavLink
                             to={`/signet/devices/${item.producer.toLowerCase()}/${item.slug.toLowerCase()}`}>
                             <p>{item.producer} {item.name}</p></NavLink></div>)}
@@ -28,7 +28,7 @@ const Search = ({value, devices, liquids}) => {
                 {
                     findLiquids.length || findLiquidsTitle.length
                         ? <div>
-                            <p>-- Жидкость --</p>
+                            <h2>-- Жидкость --</h2>
                             {
                                 findLiquids.map(item => <div key={item.id} className='search__find'>
                                     <p>{item.ruler} {item.name} -</p><p style={item.cooler || item.double_cooler ? {color: '#4574ed'} : {}}>{item.title}</p></div>)
@@ -44,7 +44,7 @@ const Search = ({value, devices, liquids}) => {
             <div>
                 {findRulers.length
                     ? <div>
-                        <p>-- Линейка --</p>
+                        <h2>-- Линейка --</h2>
                         {findRulers.map(item => <div key={item.id} className='search__find'><NavLink
                             to={`/signet/liquids/${item.slug_producer}/${item.slug}`}><p>{item.producer} {item.name}</p></NavLink>
                         </div>)}

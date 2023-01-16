@@ -7,10 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   background-image: url("https://images.wallpaperscraft.ru/image/single/dym_pelena_temnyj_fon_118867_3840x2400.jpg");
-  background-size: 100vw 100vh;
+  background-size: 100vw 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
   margin: 0;
+
 }
 
 code {

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {NavLink, useLocation} from 'react-router-dom'
 import Search from "../search/search";
 import Logo from "../logo/logo";
+import { AiOutlineSearch } from "react-icons/ai";
 import './header.scss'
 
 
@@ -16,6 +17,7 @@ const Header = ({devices, liquids}) => {
     <div className='wrapper--header'>
       <NavLink to='/signet'><Logo/></NavLink>
         <div className='header__search'>
+                <AiOutlineSearch className='search__logo'/>
                 <input
                     type="text"
                     value={value}

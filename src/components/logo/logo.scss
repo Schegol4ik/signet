@@ -1,8 +1,9 @@
 .wrapper--logo {
+  position: relative;
+  left: 20px;
+  top: 10px;
   width: 100px;
   display: flex;
-  margin-left: 20px;
-
   @keyframes net-on {
     from {
     }
